@@ -32,6 +32,19 @@ class linkedList(object):
     def getSize(self):
         return self.size
 
+    def getNum(self, n):
+        mynode = self.head
+        self.n = n
+        i = 0
+        while mynode:
+            i += 1
+            if i == n:
+                print(mynode.data)
+                break
+            else:
+                pass
+            mynode = mynode.nextNode
+    
     def printLL(self):
         mynode = self.head
         c = 0
